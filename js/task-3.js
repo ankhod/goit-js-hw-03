@@ -1,17 +1,12 @@
 function filterArray(numbers, value) {
-  // Створюємо порожній масив для зберігання підходящих чисел
   const filteredNumbers = [];
 
-  // Використовуємо цикл для ітерації кожного елемента масиву numbers
   for (let i = 0; i < numbers.length; i++) {
-    // Використовуємо умовний оператор if для перевірки кожного елемента
     if (numbers[i] > value) {
-      // Додаємо підходяще число до нового масиву
       filteredNumbers.push(numbers[i]);
     }
   }
 
-  // Повертаємо новий масив з підходящими числами
   return filteredNumbers;
 }
 

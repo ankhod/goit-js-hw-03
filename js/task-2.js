@@ -1,13 +1,10 @@
 function makeArray(firstArray, secondArray, maxLength) {
-  // Об'єднуємо два масиви
   const newArray = firstArray.concat(secondArray);
 
-  // Якщо довжина нового масиву перевищує maxLength, повертаємо його копію з довжиною maxLength
   if (newArray.length > maxLength) {
     return newArray.slice(0, maxLength);
   }
 
-  // В іншому випадку повертаємо весь новий масив
   return newArray;
 }
 
